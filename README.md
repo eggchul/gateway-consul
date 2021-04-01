@@ -8,6 +8,15 @@ The objective of this project is three folds:
 - Configure and utilize Consul as the main discovery service
 - Services are referenced by name and not IP/port
 
+### Circuit Breaker
+- All services are running
+![image](https://github.com/eggchul/gateway-consul/blob/main/all_service_running.png)
+- Service 1 down and Fallback
+![image](https://github.com/eggchul/gateway-consul/blob/main/service1_down_fallback.png)
+
+- Service 2 down and Fallback
+![image](https://github.com/eggchul/gateway-consul/blob/main/service2_down_fallback.png)
+
 ### Services
 There are 3 services created in this sample project:
 - [gateway](/gateway): this is the Spring Cloud Gateway
